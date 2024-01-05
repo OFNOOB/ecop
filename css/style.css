@@ -1,0 +1,382 @@
+.container_index {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65)), url(/img/background.png);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  position: absolute;
+  padding: 20px 50px;
+}
+
+.logo {
+  width: 180px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+  text-align: right;
+  padding: auto;
+  margin: 0 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn_nav_log {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: 0;
+  outline: 0;
+  border-radius: 80px;
+  background: #ffffff;
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn_nav_sing {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: 0;
+  outline: 0;
+  border-radius: 80px;
+  background: rgba(255, 255, 255, 0.30);
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 14%;
+  color: #fff;
+  max-width: 620px;
+}
+
+.content h1 {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 85px;
+  margin-bottom: 25px;
+}
+
+.fa-newspaper-o {
+  position: static;
+}
+
+.fa-university {
+  position: absolute;
+  right: 30%;
+}
+
+/* cards */
+
+#newstitle {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#newstitle h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+#newstitle p {
+  color: #696984;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#newscard {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  /* width: 100rem; */
+  height: 30rem;
+  /* border: 1px solid red; */
+}
+
+#newscard .card {
+  margin: 2rem 5rem 5rem 5rem;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  text-align: center;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 10px 60px 0px rgba(38, 45, 118, 0.08);
+  border-style: none;
+  /* border: 1px solid red; */
+  cursor: pointer;  
+}
+
+#newscard .card:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.5s ease-out;
+}
+
+#newscard .card .icon {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5B72EE;
+  border-radius: 100%;
+  /* border: 1px solid red; */
+}
+
+
+#newscard .card .card-body {
+  margin-top: 1rem;
+}
+
+#newscard .card .card-body h5 {
+  color: #2F327D;
+  margin-bottom: 1rem;
+}
+
+#newscard .card .card-body p {
+  color: #696984;
+}
+
+/*CSS AUTO*/
+
+.what-is-TOTC {
+  text-align: center;
+  background-color: white;
+}
+
+.div {
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 44px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 79.2px;
+  white-space: nowrap;
+}
+
+.overlap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.overlap-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-wrapper {
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 100;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.48px;
+  line-height: 1.5;
+  /* ปรับ line-height ตามความต้องการ */
+  max-width: 1500px;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: pre-line;
+  display: block;
+  padding-bottom: 40px;
+}
+
+.text-wrapper-2 {
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.48px;
+  line-height: 32px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/*Read more*/
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.read-more-button {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  /* ตั้งค่า z-index เพื่อให้ปุ่มอยู่ด้านบนของรูปภาพ */
+}
+
+.image-container:hover .read-more-button {
+  opacity: 1;
+}
+
+/*container-new แยกจากของเพื่อน เพื่อไม่ให้ดึง BG อันบนมาด้วย*/
+.containner-new {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+}
+
+
+
+/* FOOTER */
+
+#background_footer {
+  background-color: #4393F0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#row_footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  /* border: 1px solid red; */
+}
+
+#col_footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#col2_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1.5rem;
+  /* border: 1px solid red; */
+}
+
+#col2_footer h1 {
+  font-size: 22px;
+  color: #FFFFFF;
+}
+
+#row2_footer {
+  display: flex;
+  text-align: center;
+  margin-top: 2rem;
+  /* border: 1px solid red; */
+}
+
+#row2_footer h1 {
+  padding-right: 4rem;
+  font-size: 26px;
+  color: #FFFFFF;
+}
+
+#form_footer {
+  margin-top: 1rem;
+  padding-left: 9rem;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
+#form_footer #col_input {
+  display: flex;
+  justify-content: end;
+  /* border: 1px solid red; */
+}
+
+#form_footer #input {
+  width: 20rem;
+  border-radius: 80px;
+  border: 1px solid #FFF;
+
+}
+
+#form_footer #submit {
+  width: 10rem;
+  border-radius: 80px;
+  color: #4393F0;
+  background-color: #FFFFFF;
+  border: 1px solid #FFF;
+  transition: all 0.5s ease-out;
+
+}
+
+#form_footer #submit:hover {
+  width: 10rem;
+  border-radius: 80px;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 1px solid #FFF;
+
+}
+
+#row_careers ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+#row_careers ul li {
+  padding-right: 2rem;
+  font-size: 22px;
+}
+
+#row_careers ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#row_credit {
+  display: flex;
+  text-align: center;
+}
+
+#row_credit h1 {
+  padding-right: 4rem;
+  font-size: 22px;
+  color: #FFFFFF;
+}

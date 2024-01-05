@@ -5,6 +5,8 @@ module.exports = async (req, res) => {
     res.render('index/index');
     
   } catch (error) {
+
     res.redirect('/error');
+    
   }
 }
