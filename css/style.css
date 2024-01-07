@@ -1,11 +1,4 @@
-.container_index {
-  width: 100%;
-  min-height: 100vh;
-  background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65)), url(/img/background.png);
-  background-size: cover;
-  background-position: center;
-  padding: 10px 8%;
-}
+/* HEADER */
 
 nav {
   width: 100%;
@@ -66,204 +59,6 @@ nav ul li a {
   font-weight: 500;
   cursor: pointer;
 }
-
-.content {
-  margin-top: 14%;
-  color: #fff;
-  max-width: 620px;
-}
-
-.content h1 {
-  font-size: 70px;
-  font-weight: 600;
-  line-height: 85px;
-  margin-bottom: 25px;
-}
-
-.fa-newspaper-o {
-  position: static;
-}
-
-.fa-university {
-  position: absolute;
-  right: 30%;
-}
-
-/* cards */
-
-#newstitle {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-#newstitle h1 {
-  font-weight: 700;
-  font-size: 36px;
-}
-
-#newstitle p {
-  color: #696984;
-  font-weight: 400;
-  font-size: 24px;
-}
-
-#newscard {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  /* width: 100rem; */
-  height: 30rem;
-  /* border: 1px solid red; */
-}
-
-#newscard .card {
-  margin: 2rem 5rem 5rem 5rem;
-  padding-top: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70%;
-  text-align: center;
-  border-radius: 20px;
-  background: #FFF;
-  box-shadow: 0px 10px 60px 0px rgba(38, 45, 118, 0.08);
-  border-style: none;
-  /* border: 1px solid red; */
-  cursor: pointer;  
-}
-
-#newscard .card:hover {
-  transform: scale(1.1, 1.1);
-  transition: all 0.5s ease-out;
-}
-
-#newscard .card .icon {
-  width: 5rem;
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #5B72EE;
-  border-radius: 100%;
-  /* border: 1px solid red; */
-}
-
-
-#newscard .card .card-body {
-  margin-top: 1rem;
-}
-
-#newscard .card .card-body h5 {
-  color: #2F327D;
-  margin-bottom: 1rem;
-}
-
-#newscard .card .card-body p {
-  color: #696984;
-}
-
-/*CSS AUTO*/
-
-.what-is-TOTC {
-  text-align: center;
-  background-color: white;
-}
-
-.div {
-  font-family: "Poppins-SemiBold", Helvetica;
-  font-weight: 600;
-  color: #000000;
-  font-size: 44px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 79.2px;
-  white-space: nowrap;
-}
-
-.overlap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.img {
-  object-fit: cover;
-  position: relative;
-  z-index: 1;
-}
-
-.overlap-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.text-wrapper {
-  font-family: "Poppins-Regular", Helvetica;
-  font-weight: 100;
-  color: #000000;
-  font-size: 18px;
-  text-align: center;
-  letter-spacing: 0.48px;
-  line-height: 1.5;
-  /* ปรับ line-height ตามความต้องการ */
-  max-width: 1500px;
-  margin: 0 auto;
-  overflow: hidden;
-  white-space: pre-line;
-  display: block;
-  padding-bottom: 40px;
-}
-
-.text-wrapper-2 {
-  font-family: "Poppins-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 18px;
-  text-align: center;
-  letter-spacing: 0.48px;
-  line-height: 32px;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-/*Read more*/
-
-.image-container {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.read-more-button {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #3498db;
-  color: #ffffff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 2;
-  /* ตั้งค่า z-index เพื่อให้ปุ่มอยู่ด้านบนของรูปภาพ */
-}
-
-.image-container:hover .read-more-button {
-  opacity: 1;
-}
-
-/*container-new แยกจากของเพื่อน เพื่อไม่ให้ดึง BG อันบนมาด้วย*/
-.containner-new {
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  padding: 10px 8%;
-}
-
-
 
 /* FOOTER */
 
@@ -379,4 +174,166 @@ nav ul li a {
   padding-right: 4rem;
   font-size: 22px;
   color: #FFFFFF;
+}
+
+/* CONTENT */
+
+/* Main content */
+.container_index {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65)), url(/img/background.png);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+}
+
+.content_main {
+  margin-top: 14%;
+  color: #fff;
+  max-width: 50%;
+}
+
+.content_main h1 {
+  font-size: 6rem;
+}
+
+.content_main p {
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
+
+.main_join {}
+
+.btn_join {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: 0;
+  outline: 0;
+  border-radius: 80px;
+  background: rgba(255, 255, 255, 0.30);
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Content_more Global */
+.content_more {
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.content_more h1 {
+  margin: 0;
+  font-weight: bolder;
+  padding-bottom: 20px;
+  font-size: 42px;
+}
+
+.content_more p {
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 19px;
+  max-width: 1200px;
+}
+
+.topic {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* Section 1 */
+
+/* Card */
+.content_card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.content_card .card {
+  margin: 5rem 5rem 0 5rem;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  text-align: center;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 10px 60px 0px rgba(38, 45, 118, 0.08);
+  border-style: none;
+  cursor: pointer;
+
+}
+
+.content_card .card:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.5s ease-out;
+}
+
+.content_card .card .icon {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5B72EE;
+  border-radius: 100%;
+  font-size: 4rem;
+}
+
+.content_card .card .card-body {
+  margin-top: 1rem;
+}
+
+.content_card .card .card-body h3 {
+  color: #2F327D;
+  margin-bottom: 1rem;
+}
+
+.card .card-body p {
+  color: #696984;
+  font-size: 16px;
+}
+
+.icon i {
+  color: #FFF;
+}
+
+/* Section 2 */
+.overlap {
+  position: relative;
+  display: inline-block;
+}
+
+.overlap img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.overlap_btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3498db;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.overlap_btn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 15px;
 }
