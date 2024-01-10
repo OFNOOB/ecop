@@ -1,5 +1,4 @@
 /* HEADER */
-
 nav {
   width: 100%;
   display: flex;
@@ -61,7 +60,6 @@ nav ul li a {
 }
 
 /* FOOTER */
-
 #background_footer {
   background-color: #4393F0;
   display: flex;

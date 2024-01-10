@@ -40,8 +40,13 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // VIEWS INDEX
+// INDEX
 const indexController = require('./controllers/views/index/indexController');
 app.get('/', indexController);
+
+// ADMIN
+const adminController = require('./controllers/views/admin/adminController');
+app.get('/admin-ecop', adminController);
 
 
 

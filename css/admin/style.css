@@ -1,0 +1,33 @@
+/* HEADER NAVBAR */
+
+.navbar_header {
+    width: 100%;
+    padding: 0 50px;
+    background-color: #c4c4c4;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin_header_logo {
+    width: auto;
+}
+
+.admin_header_logo img {
+    width: auto;
+    height: 80px;
+    cursor: pointer;
+}
+
+.admin_account {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.fa-user {
+    font-size: 15px;
+    padding-right: 20px;
+}
