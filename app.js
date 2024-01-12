@@ -47,6 +47,8 @@ app.get('/', indexController);
 // ADMIN
 const adminController = require('./controllers/views/admin/adminController');
 app.get('/admin-ecop', adminController);
+const adminLoginController = require('./controllers/views/admin/adminLoginController');
+app.get('/admin-ecop/login', adminLoginController)
 
 
 
