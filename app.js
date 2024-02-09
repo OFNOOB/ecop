@@ -44,6 +44,10 @@ app.set('view engine', 'ejs');
 const indexController = require('./controllers/views/index/indexController');
 app.get('/', indexController);
 
+// Blog
+const blogController = require('./controllers/views/blog/blogController.js');
+app.get('/blog', blogController);
+
 // ADMIN
 const adminController = require('./controllers/views/admin/adminController');
 app.get('/admin-ecop', adminController);
